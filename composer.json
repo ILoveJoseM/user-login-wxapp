@@ -1,5 +1,5 @@
 {
-  "name": "jose-chan/user-login",
+  "name": "jose-chan/user-login-wxapp",
   "description": "user login for laravel by wechat mini-program",
   "keywords": ["laravel", "login", "wechat-mini-program"],
   "authors": [{
