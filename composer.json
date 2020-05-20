@@ -1,0 +1,51 @@
+{
+  "name": "jose-chan/user-login",
+  "description": "user login for laravel by wechat mini-program",
+  "keywords": ["laravel", "login", "wechat-mini-program"],
+  "authors": [{
+    "name": "JoseChan",
+    "email": "524233828@qq.com"
+  }],
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": "^7.1.3",
+    "jose-chan/user-login": "^3.0",
+    "jose-chan/wechat-miniprogram": "^1.0",
+    "ext-json": "*",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "filp/whoops": "^2.0",
+    "fzaninotto/faker": "^1.4",
+    "mockery/mockery": "^1.0",
+    "nunomaduro/collision": "^2.0",
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "JoseChan\\UserLogin\\Wechat\\MiniProgram": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": [
+      ],
+      "providers": [
+        "JoseChan\\UserLogin\\Wechat\\MiniProgram\\Providers\\WxappUserLoginProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
